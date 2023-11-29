@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 
-const ModalANT = () => {
+const ModalANT = ({colorUser}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -15,12 +15,11 @@ const ModalANT = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Mostrar color
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <Modal title="Color elegido:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <div style={ {backgroundColor:`${colorUser}`, border: "1px solid black", height:"100px"}} ></div>
+      
       </Modal>
     </>
   );

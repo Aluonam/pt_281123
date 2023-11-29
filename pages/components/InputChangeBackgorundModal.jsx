@@ -7,10 +7,9 @@ const InputChangeBackgorundModal = () => {
 
   return (
     <>
-    {colorUser}
     <h3>Escribe un color:</h3>
     <input type='color' onChange={(e)=>{setColorUser(e.target.value)}}></input>
-    <ModalANT></ModalANT>
+    <ModalANT colorUser={colorUser}></ModalANT>
     </>
   )
 }
