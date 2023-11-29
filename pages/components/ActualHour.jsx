@@ -14,7 +14,10 @@ const ActualHour = () => {
     
 
   return (
+    <>
+    <h3>Muestra la hora actual:</h3>
     <div>{hour}</div>
+    </>
   )
 }
 
