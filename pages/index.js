@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import APIcall from './components/APIcall'
 import InputChangeBackgorundModal from './components/InputChangeBackgorundModal'
+import ActualHour from './components/ActualHour'
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         <APIcall></APIcall>
         <br></br>
         <InputChangeBackgorundModal></InputChangeBackgorundModal>
+        <br></br>
+        <ActualHour></ActualHour>
       </main>
     </>
   )
