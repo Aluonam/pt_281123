@@ -5,7 +5,11 @@ const ActualHour = () => {
     const [hour, setHour] = useState("00:00:00")
 
     useEffect(() => {
-      
+      const interval = setInterval(()=>{
+        const date = new Date();
+        console.log(date)
+      }, 1000)
+      return ()=> clearInterval(interval)
     }, [])
     
 
