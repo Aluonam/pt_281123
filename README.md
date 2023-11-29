@@ -5,3 +5,5 @@ https://jsonplaceholder.typicode.com/todos/1
 
 
 Crea un input que cambie el valor de fondo de un modal (el input está fuera del modal) y al abrir el modal se vea el color de fondo que ha elegido el usuario.
+
+Añade la fecha y hora actual que se actualice cada segundo
