@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 const APIcall = () => {
 
     const [dataAPI, setDataAPI] = useState([])
+    const [idWriteByUser, setIdWriteByUser] = useState(1)
 
     useEffect(() => {
       
@@ -19,7 +20,7 @@ const APIcall = () => {
   return (
     <>
     <h3>Escribe el id de la tarea:</h3>
-    <input type='number'></input>
+    <input type='number' onChange={(e)=>{setIdWriteByUser(e.target.value)}}></input>
     <button onClick={()=>{}}>Muestra la tarea</button>
     {dataAPI}
     </>
