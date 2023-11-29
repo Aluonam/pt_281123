@@ -4,8 +4,6 @@ const APIcall = () => {
 
     const [dataAPI, setDataAPI] = useState([])
     const [idWriteByUser, setIdWriteByUser] = useState(1)
-
-    
       
     const request = async (idTask)=>{
             try{
@@ -19,7 +17,7 @@ const APIcall = () => {
   return (
     <>
     <h3>Escribe el id de la tarea:</h3>
-    <input type='number' onChange={(e)=>{setIdWriteByUser(e.target.value)}}></input>
+    <input type='number' onChange={(e)=>{setIdWriteByUser(e.target.value)}} min="1" max="100"></input>
     <button onClick={()=>{request(idWriteByUser)}}>Muestra la tarea</button>
     {dataAPI}
     </>
